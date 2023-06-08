@@ -1,0 +1,47 @@
+/*
+Name         : sumant raju
+date         : 8/12/2022
+descripton   : WAP to print pyramid pattern of number as shown in below
+Sample Output: 
+             Test Case 2:
+             Enter the number: 5
+             5
+             4 5
+             3 4 5
+             2 3 4 5
+             1 2 3 4 5
+             2 3 4 5
+             3 4 5
+             4 5
+             5
+ */
+
+#include <stdio.h>
+int main()
+{
+
+    //variable declaration
+    int  n, i, j;
+
+    //read input from the user
+    printf("Enter the number of rows: ");
+    scanf("%d",&n);
+
+    //logi or condition to print pattern
+    for(int i = n; i > 1; i--)
+    {
+	for(int j = i ; j <= n; j++)
+
+	    printf("%d ",j);
+
+	//print new line if condition is false
+	printf("\n");
+    }
+    for(int i = 1; i <= n; i++)
+    {
+	for(int j = i; j <= n; j++)
+	    printf("%d ",j);
+	printf("\n");
+    }
+    return 0;
+}
